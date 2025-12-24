@@ -18,20 +18,21 @@
     </properties>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>amcc-maven-snapshots</id>
-            <url>http://tech-amcc.it:8081/repository/amcc-maven-snapshots/</url>
-        </snapshotRepository>
         <repository>
-            <id>amcc-maven-releases</id>
-            <url>http://tech-amcc.it:8081/repository/amcc-maven-releases/</url>
+            <id>protoqsar-maven-releases</id>
+            <url>https://nexus.protoqsar.com/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 
     <repositories>
         <repository>
-            <id>maven-public</id>
-            <url>http://tech-amcc.it:8081/repository/maven-public/</url>
+            <id>maven-central</id>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+        <repository>
+            <!-- public repo hosted by ProtoQSAR, access with maven-public:maven-public -->
+            <id>protoqsar-maven-public</id>
+            <url>https://nexus.protoqsar.com/repository/maven-public/</url>
         </repository>
     </repositories>
 
